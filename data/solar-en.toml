@@ -235,7 +235,7 @@ goods = [
 [[planets]]
 id = "moon5-3"
 name = "Ganymede"
-description = "Home to a fervent mining conglomerates, has been at war with Callisto for years"
+description = "Home to an aggressive mining conglomerates, has been at war with Callisto for years"
 orbits = "planet5"
 ships = ["ship5", "ship6", "ship7"]
 goods = [
@@ -269,7 +269,7 @@ ships = ["ship0", "ship1", "ship2", "ship5", "ship6"]
 [[planets]]
 id = "planet6"
 name = "Saturn"
-description = "Space Station Cassini nestled above Saturn's rings"
+description = "Space Station Cassini nestled above Saturn's iconic rings"
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 250,    max = 600 },
