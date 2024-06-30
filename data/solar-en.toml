@@ -3,8 +3,11 @@ language = "en"
 
 [game]
 starting-planet = "planet3"  # Earth
-base-consumption = {  # what is consumed each day
-    fuel = 0.5,  # increased through ship size upgrades, eliminated with fusion reactor
+starting-ship   = "ship1"    # Grasshopper
+
+# what is consumed each day
+base-consumption = {
+    # NOTE: fuel is not included because consumption is set by ship class
     food = 0.1,
     water = 0.1,
 ]
@@ -194,22 +197,126 @@ id = "dwarf1"
 name = "Pluto"
 description = "A small, remote dwarf planet in the Kuiper Belt"
 
+#########
+# Ships #
+#########
+# What ships you can buy
+
+[[ships]]
+id = "ship0"
+name = "Flea"
+description = "The smallest warp-capable ship"
+cost = [2000, 4000]
+cargo = 20
+hull = 20
+fuel = 0.5  # how much fuel is required per day
+expansions = ["escape"]
+
+[[ships]]
+id = "ship1"
+name = "Grasshopper"
+description = "A cheap commercial ship"
+cost = [5000, 6900]
+cargo = 40
+hull = 25
+fuel = 0.5
+expansions = ["escape", "weapons", "shields"]
+
+[[ships]]
+id = "ship2"
+name = "Beetle"
+description = "A sturdy ship useful for transport"
+cost = [9_300, 10_000]
+cargo = 80
+hull = 30
+fuel = 0.8
+expansions = ["escape", "weapons", "shields", "locality"]
+
+[[ships]]
+id = "ship3"
+name = "Pigeon"
+description = "Fast and maneuverable, the smallest multi-deck ship"
+cost = [22_200, 24_200]
+cargo = 150
+hull = 50
+fuel = 1.5
+preinstalled = ["escape"]
+expansions = ["weapons", "shields", "locality", "cloak", "no-fuel"]
+
+[[ships]]
+id = "ship4"
+name = "Owl"
+description = "A bulky multi-deck ship favored by luxury travellers"
+cost = [31_000, 35_000]
+cargo = 200
+hull = 80
+fuel = 2
+preinstalled = ["escape"]
+expansions = ["weapons", "shields", "locality", "cloak", "no-fuel"]
+
+[[ships]]
+id = "ship5"
+name = "Falcon"
+description = "A fierce cruiser used by commercial shipping companies and mercenaries alike"
+cost = [50_000, 55_000]
+cargo = 400
+hull = 100
+fuel = 4
+preinstalled = ["escape"]
+expansions = ["weapons", "shields", "locality", "cloak", "no-fuel"]
+
+[[ships]]
+id = "ship6"
+name = "Eagle"
+cost = [70_000, 75_000]
+cargo = 600
+hull = 120
+fuel = 6
+preinstalled = ["escape"]
+expansions = ["weapons", "shields", "locality", "cloak", "no-fuel"]
+
+[[ships]]
+id = "ship7"
+name = "Destroyer"
+description = "Technically a retired military ship, large and powerful"
+cost = [1_000_000, 1_000_000]
+cargo = 10_000
+hull = 300
+fuel = 20
+preinstalled = ["escape", "locality", "weaons", "shields"]
+expansions = ["cloak", "no-fuel"]
+
+[[ships]]
+id = "ship8"
+name = "Carrier"
+description = "An even larger retired military ship, built to transport hundreds of fighters"
+cost = [4_000_000, 4_000_000]
+cargo = 50_000
+hull = 500
+fuel = 40
+preinstalled = ["escape", "locality", "weaons", "shields"]
+expansions = ["cloak", "no-fuel"]
+
 ##############
 # Expansions #
 ##############
 # Things you can buy for your ship
 
-[[epansions]]
+[[expansions]]
 name = "Escape Pods"
 description = "Allows you to survive the destruction of your ship"
 cost = 700
 features = ["escape"]
+
+# TODO cargo bays
 
 [[expansions]]
 name = "Impulse Drive"
 description = "Allows you to visit two locations in the same system per day"
 cost = 7000
 features = ["locality"]
+
+# TODO multiple weapon, shield tiers
 
 [[expansions]]
 name = "Phaser Bank"
