@@ -115,7 +115,7 @@ description = "Olympus City, a Martian metropolis of 17 million"
 [[planets]]
 id = "planet5"
 name = "Jupiter"
-description = "Space Station Horizon in orbit above Jupiter"
+description = "Space Station Horizon has a very beautiful arboretum"
 
 [[planets]]
 id = "moon5-1"
