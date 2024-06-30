@@ -31,50 +31,59 @@ debt-death    = 900_000  # When your debt hits this, it's game over
 [[goods]]
 id = "fuel"
 name = "Fuel"
+word = "fuel"
 description = "Used to power your warp drive, and a valuable commodity in its own right"
 fractional = true
 
 [[goods]]
 id = "food"
 name = "Food"
+word = "food"
 description = "Fresh food products and prepared meals"
 fractional = true
 
 [[goods]]
 id = "water"
 name = "Water"
+word = "water"
 description = "Drinkable water, suitable for a variety of uses"
 fractional = true
 
 [[goods]]
 id = "ore"
 name = "Ore"
+word = "ore"
 description = "Unprocessed metallic ores used in manufacturing"
 
 [[goods]]
 id = "robots"
 name = "Robotics"
+word = "robot"
 description = "Automated helpers to assist with many mundane tasks"
 
 [[goods]]
 id = "meds"
 name = "Medicine"
+word = "medical supply"
 description = "Medical supplies and drugs needed to run any healthcare system"
 
 [[goods]]
 id = "arms"
 name = "Plasma Rifles"
+word = "plasma rifle"
 description = "Crates of your basic handheld firearm (cannot be used to defend your ship)"
 limit = 20  # having more than this quantity is illegal
 
 [[goods]]
 id = "warp"
 name = "Dilithium"
+word = "dilithium"
 description = "Rare crystals used in the construction of warp drives"
 
 [[goods]]
 id = "drugs"
 name = "Narcotics"
+word = "narcotics"
 description = "Highly pleasurable, highly illegal"
 fractional = true
 illegal = true
@@ -82,6 +91,7 @@ illegal = true
 [[goods]]
 id = "gel"
 name = "Biomimetic gel"
+word = "biomimetic gel"
 description = "Used in the study of genetics, but strictly regulated"
 fractional = true
 illegal = true
@@ -116,7 +126,7 @@ goods = [
 id = "planet2"
 name = "Venus"
 description = "Space Station Magellan in orbit above Venus"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-2"]
 ships = ["ship0", "ship1", "ship2", "ship5"]
 goods = [
     { id = "fuel",   stock = 20000, regen = 70, min = 100,    max = 600 },
@@ -135,7 +145,7 @@ goods = [
 id = "planet3"
 name = "Earth"
 description = "Galaxy Spaceport, near United Earth Headquarters"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-down-1", "water-down-2"]
 ships = ["ship0", "ship1", "ship2", "ship7", "ship8"]
 goods = [
     { id = "fuel",   stock = 18000, regen = 30, min = 250,    max = 800 },
@@ -154,7 +164,7 @@ goods = [
 id = "moon3-1"
 name = "Luna"
 description = "Lunar Base Sigma, on Earth's moon"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-2"]
 orbits = "planet3"
 ships = []
 goods = [
@@ -171,7 +181,7 @@ goods = [
 id = "planet4"
 name = "Mars"
 description = "Olympus City, a Martian metropolis of 17 million"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 200,    max = 800 },
@@ -190,7 +200,7 @@ goods = [
 id = "planet5"
 name = "Jupiter"
 description = "Space Station Horizon has a very beautiful arboretum"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 ships = ["ship0", "ship1"]
 goods = [
     # good ID        base stock and change %   price range
@@ -207,7 +217,7 @@ goods = [
 id = "moon5-1"
 name = "Io"
 description = "Sulfur City is well-known as a party destination"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-2"]
 orbits = "planet5"
 ships = ["ship0", "ship1", "ship2", "ship3"]
 goods = [
@@ -225,7 +235,7 @@ goods = [
 id = "moon5-2"
 name = "Europa"
 description = "The seafood from Europan oceans is known to be delectable"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
 orbits = "planet5"
 ships = ["ship0", "ship1", "ship2"]
 goods = [
@@ -244,7 +254,7 @@ goods = [
 id = "moon5-3"
 name = "Ganymede"
 description = "Home to an aggressive mining conglomerates, has been at war with Callisto for years"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
 orbits = "planet5"
 ships = ["ship5", "ship6", "ship7"]
 goods = [
@@ -262,7 +272,7 @@ goods = [
 id = "moon5-4"
 name = "Callisto"
 description = "Poor colony that sees itself as resisting Ganymedian corporate fascism"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
 orbits = "planet5"
 ships = ["ship0", "ship1", "ship2", "ship5", "ship6"]
     { id = "fuel",   stock = 10000, regen = 20, min = 200,    max = 800 },
@@ -280,7 +290,7 @@ ships = ["ship0", "ship1", "ship2", "ship5", "ship6"]
 id = "planet6"
 name = "Saturn"
 description = "Space Station Cassini nestled above Saturn's iconic rings"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 250,    max = 600 },
@@ -299,7 +309,7 @@ goods = [
 id = "moon6-6"
 name = "Titan"
 description = "At 52 million people, this is the most populated place past Mars"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
 orbits = "planet6"
 ships = ["ship3", "ship4", "ship5"]
 goods = [
@@ -319,7 +329,7 @@ goods = [
 id = "moon6-5"
 name = "Rhea"
 description = "The preferred retirement destination for the well-off"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
 orbits = "planet6"
 ships = ["ship3", "ship4"]
 goods = [
@@ -336,7 +346,7 @@ goods = [
 id = "moon6-1"
 name = "Mimas"
 description = "A dull moon only known for its weapon factories"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 orbits = "planet6"
 ships = []
 goods = [
@@ -352,7 +362,7 @@ goods = [
 [[planets]]
 id = "planet7"
 name = "Uranus"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 description = "The famous Herschel Shipyards are in orbit here"
 ships = ["ship0", "ship1", "ship2", "ship3", "ship4", "ship5", "ship6", "ship7", "ship8"]
 goods = [
@@ -371,7 +381,7 @@ goods = [
 [[planets]]
 id = "moon7-3"
 name = "Titania"
-events = []
+events = ["flavor", "prison-break", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 description = "A notorious penal colony resides here"
 orbits = "planet7"
 ships = []
@@ -387,7 +397,7 @@ goods = [
 [[planets]]
 id = "moon7-4"
 name = "Oberon"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 description = "The solar system's only natural source of dilithium"
 orbits = "planet7"
 ships = ["ship4", "ship5"]
@@ -407,7 +417,7 @@ goods = [
 [[planets]]
 id = "planet8"
 name = "Neptune"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 description = "All that orbits here is a tiny science station"
 ships = []
 goods = [
@@ -423,7 +433,7 @@ goods = [
 [[planets]]
 id = "moon8-1"
 name = "Triton"
-events = []
+events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
 description = "The largest population center, Leviathan, has about 48,000 people"
 orbits = "planet8"
 ships = ["ship0"]
@@ -442,7 +452,7 @@ ships = ["ship0"]
 [[planets]]
 id = "dwarf1"
 name = "Pluto"
-events = []
+events = []  # nothing ever happens on Pluto
 description = "A small, remote dwarf planet in the Kuiper Belt"
 ships = ["ship9"]
 goods = [
@@ -453,6 +463,183 @@ goods = [
     { id = "drugs",  stock =  1000, regen = 10, min = 80_000, max = 100_000 },
     { id = "gel",    stock =    25, regen =  2, min = 50_000, max = 780_000 },
 ]
+
+##########
+# Events #
+##########
+
+[[events]]
+id = "flavor"  # has no effect on gameplay
+goods = []
+description = [
+    "{planet} government announces capture of terrorist leader!",
+    "{planet} government fails to pass budget, chaos in the legislature!",
+    "Are {randcolor} spacesuits now fashionable?",
+    "Is {randcolor} the ugliest color? Vote now!",
+    "Famous celebrity does something stupid!",
+]
+
+# TODO salvage events
+# TODO cash events
+
+[[events]]
+id = "goods-up"
+goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
+description = [
+    "{planet} is facing a massive {good} shortage!",
+    "{planet} government announces critical {good} shortage",
+    "{goodname} suddenly hard to find - market manipulation blamed!",
+    "Massive merger between {good} corporations, monopoly fears boost prices!",
+]
+effect = {
+    duration = [2, 5],
+    price = [2.4, 3.8],
+}
+
+[[events]]
+id = "goods-down"
+goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
+description = [
+    "{planet} government announces release of {good} stockpiles",
+    "{planet} government announces temporary price controls for {good}",
+]
+effect = {
+    duration = [2, 5],
+    price = [0.30, 0.60],
+}
+
+[[events]]
+id = "goods-flux"
+goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
+description = [
+    "{planet} economic forecast in {good} market unsure",
+    "Massive instability in {good} markets!",
+    "{planet} government backs out of {good} regulation plan, market chaos!",
+    "Solar system network outages cause market chaos!",
+]
+effect = {
+    duration = [1, 10],
+    price = [0.60, 2.2],
+}
+
+[[events]]
+id = "water-up-1"
+goods = ["water"]
+description = [
+    "Drought hits {planet}! Water prices skyrocket!",
+    "Drought hits {planet}! Water sorely needed",
+    "Freak accident evaporates water supplies!",
+    "Factory explodes and contaminates water supply!",
+]
+effect = {
+    duration = [2, 5],
+    price = [2.0, 6.0],
+}
+
+[[events]]
+id = "water-up-2"
+goods = ["water"]
+description = [
+    "Water tanker explodes! Terrorists blamed",
+    "Water tanker collapses! Millions scrambling for water",
+    "Corporation admits to poisoning water supply. Prices skyrocket!",
+    "Ion storm destroys water purification cells!",
+]
+effect = {
+    duration = [3, 8],
+    price = [2.5, 12.0],
+}
+
+[[events]]
+id = "water-up-3"
+goods = ["water"]
+description = [
+    "Water tanker collapses! Thousands scrambling for water",
+    "Ion storm destroys critical water infrastructure!",
+    "Spaceship crashes into water tanker, supply dries up!",
+    "Terrorists destroy water pipeline!",
+]
+effect = {
+    duration = [6, 10],
+    price = [8.0, 15.0],
+}
+
+[[events]]
+id = "water-down-1"
+goods = ["water"]
+description = [
+    "Underground water basin found",
+    "New source of water discovered under {planet}'s crust",
+]
+effect = {
+    duration = [10, 20],
+    price = [0.15, 0.50],
+}
+
+[[events]]
+id = "water-down-2"
+goods = ["water"]
+description = [
+    "New water refinery installed!",
+    "New water purification technology rollout complete",
+]
+effect = {
+    duration = [10, 20],
+    price = [0.05, 0.15],
+}
+
+[[events]]
+id = "drugs-up"
+goods = ["drugs"]
+description = [
+    "{planet} government declares a War on Drugs. Prices skyrocket!",
+    "{planet} government declares a War on Drugs. Demand skyrockets!",
+    "{planet} faces narcotics crackdown. Prices skyrocket!",
+    "{planet} faces narcotics crackdown. Demand skyrockets!",
+    "{planet} is facing extreme boredom! People seek refuge in drugs",
+    "Anti-narcotics legislation introduced, prices skyrocket!",
+    "New narcotic hits the market, everyone goes wild!",
+    "Drug cartel hoards product in attempt to win price war with rival",
+]
+effect = {
+    duration = [3, 5],
+    price = [3.0, 20.0],
+}
+
+[[events]]
+id = "drugs-down"
+goods = ["drugs"]
+description = [
+    "Anti-narcotics legislation fails, prices plummet!",
+    "Illicit drug production hits an all-time high",
+    "Medical facility on {randplanet} robbed, cheap drugs flood the streets!",
+    "Drug cartel dumps product in attempt to win price war with rival",
+]
+effect = {
+    duration = [3, 5],
+    price = [0.25, 0.90],
+}
+
+# TODO more good-specific events
+
+[[events]]
+id = "prison-break"
+goods = ["food", "water", "robots", "meds", "arms", "warp"]
+description = [
+    "Massive prison break! Fears of criminals results in {good} price surge!",
+    "Thousands escape from prison, everyone starts hoarding {good}!",
+]
+effect = {
+    duration = [2, 4],
+    price = [6.0, 8.1],
+}
+
+##############
+# Encounters #
+##############
+# Dealing with other ships
+
+# TODO
 
 #########
 # Ships #
@@ -558,7 +745,7 @@ expansions = ["cloak", "no-fuel"]
 [[ships]]
 id = "ship9"
 name = "Void"
-description = "An unusual ship which makes use of experimental dark matter technology"
+description = "An unusual ship that makes use of experimental dark matter technology"
 cost = [1_000_000_000, 1_000_000_000]
 cargo = 1_000_000
 hull = 10_000
@@ -618,3 +805,15 @@ features = ["no-fuel"]
 
 [messages]
 # TODO
+
+colors = [
+    "red",
+    "green",
+    "blue",
+    "yellow",
+    "purple",
+    "pink",
+    "fuchsia",
+    "white",
+    "black",
+]
