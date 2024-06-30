@@ -1,0 +1,244 @@
+# What language this configuration represents
+language = "en"
+
+[game]
+starting-planet = "planet3"  # Earth
+base-consumption = {  # what is consumed each day
+    fuel = 0.5,  # increased through ship size upgrades, eliminated with fusion reactor
+    food = 0.1,
+    water = 0.1,
+]
+
+[game.money]
+starting-cash = 100_000
+starting-debt = 102_000
+starting-bank = 0
+
+debt-interest = 0.07
+bank-interest = 0.05
+
+debt-limit    = 200_000  # If your debt is less than this, you can borrow up to this amount
+debt-death    = 900_000  # When your debt hits this, it's game over
+
+#########
+# Goods #
+#########
+# Things that can be bought/sold at planets
+
+[[goods]]
+id = "fuel"
+name = "Fuel"
+description = "Used to power your warp drive, and a valuable commodity in its own right"
+fractional = true
+
+[[goods]]
+id = "food"
+name = "Food"
+description = "Fresh food products and prepared meals"
+fractional = true
+
+[[goods]]
+id = "water"
+name = "Water"
+description = "Drinkable water, suitable for a variety of uses"
+fractional = true
+
+[[goods]]
+id = "ore"
+name = "Ore"
+description = "Unprocessed metallic ores used in manufacturing"
+
+[[goods]]
+id = "robots"
+name = "Robotics"
+description = "Automated helpers to assist with many mundane tasks"
+
+[[goods]]
+id = "medicine"
+name = "Medicine"
+description = "Medical supplies and drugs needed to run any healthcare system"
+
+[[goods]]
+id = "weapons"
+name = "Plasma Rifles"
+description = "Crates of your basic handheld firearm (cannot be used to defend your ship)"
+limit = 20  # having more than this quantity is illegal
+
+[[goods]]
+id = "dilithium"
+name = "Dilithium"
+description = "Rare crystals used in the construction of warp drives"
+
+[[goods]]
+id = "drugs"
+name = "Narcotics"
+description = "Highly pleasurable, highly illegal"
+fractional = true
+illegal = true
+
+[[goods]]
+id = "gel"
+name = "Biomimetic gel"
+description = "Used in the study of genetics, but strictly regulated"
+fractional = true
+illegal = true
+
+#############
+# Locations #
+#############
+# Places you can visit
+
+[[planets]]
+id = "planet2"
+name = "Venus"
+description = "Space Station Magellan in orbit above Venus"
+
+[[planets]]
+id = "planet3"
+name = "Earth"
+description = "Galaxy Spaceport, near United Earth Headquarters"
+
+[[planets]]
+id = "moon3-1"
+name = "Luna"
+description = "Lunar Base Sigma, on Earth's moon"
+orbits = "planet3"
+
+[[planets]]
+id = "planet4"
+name = "Mars"
+description = "Olympus City, a Martian metropolis of 17 million"
+
+[[planets]]
+id = "planet5"
+name = "Jupiter"
+description = "Space Station Horizon in orbit above Jupiter"
+
+[[planets]]
+id = "moon5-1"
+name = "Io"
+description = "Sulfur City is well-known as a party destination"
+orbits = "planet5"
+
+[[planets]]
+id = "moon5-2"
+name = "Europa"
+description = "The seafood from Europan oceans is known to be delectable"
+orbits = "planet5"
+
+[[planets]]
+id = "moon5-3"
+name = "Ganymede"
+description = "Home to a fervent mining conglomerates, has been at war with Callisto for years"
+orbits = "planet5"
+
+[[planets]]
+id = "moon5-4"
+name = "Callisto"
+description = "Poor colony that sees itself as resisting Ganymedian corporate fascism"
+orbits = "planet5"
+
+[[planets]]
+id = "planet6"
+name = "Saturn"
+description = "Space Station Cassini nestled above Saturn's rings"
+
+[[planets]]
+id = "moon6-6"
+name = "Titan"
+description = "At 52 million people, this is the most populated place past Mars"
+orbits = "planet6"
+
+[[planets]]
+id = "moon6-5"
+name = "Rhea"
+description = "The preferred retirement destination for the well-off"
+orbits = "planet6"
+
+[[planets]]
+id = "moon6-1"
+name = "Mimas"
+description = "A dull moon only known for its weapon factories"
+orbits = "planet6"
+
+[[planets]]
+id = "planet7"
+name = "Uranus"
+description = "The famous Herschel Shipyards are in orbit here"
+
+[[planets]]
+id = "moon7-3"
+name = "Titania"
+description = "A notorious penal colony resides here"
+orbits = "planet7"
+
+[[planets]]
+id = "moon7-4"
+name = "Oberon"
+description = "The solar system's only natural source of dilithium"
+orbits = "planet7"
+
+[[planets]]
+id = "planet8"
+name = "Neptune"
+description = "All that orbits here is a tiny science station"
+
+[[planets]]
+id = "moon8-1"
+name = "Triton"
+description = "The largest population center, Patera, has almost 48,000 people"
+orbits = "planet8"
+
+[[planets]]
+id = "dwarf1"
+name = "Pluto"
+description = "A small, remote dwarf planet in the Kuiper Belt"
+
+##############
+# Expansions #
+##############
+# Things you can buy for your ship
+
+[[epansions]]
+name = "Escape Pods"
+description = "Allows you to survive the destruction of your ship"
+cost = 700
+features = ["escape"]
+
+[[expansions]]
+name = "Impulse Drive"
+description = "Allows you to visit two locations in the same system per day"
+cost = 7000
+features = ["locality"]
+
+[[expansions]]
+name = "Phaser Bank"
+description = "Enables firing on enemy ships"
+cost = 8000
+features = ["weapons"]
+
+[[expansions]]
+name = "Deflector Shields"
+description = "Basic ship defensive capability"
+cost = 2000
+features = ["shields"]
+
+[[expansions]]
+name = "Cloaking Device"
+description = "Allows you to travel from system to system entirely undetected"
+cost = 700_000
+features = ["cloak"]
+
+[[expansions]]
+name = "Fusion Reactor"
+description = "Advanced on-ship energy source that replaces fuel use for your warp drive"
+cost = 880_000
+features = ["no-fuel"]
+
+############
+# Messages #
+############
+# Any other translation strings
+
+[messages]
+# TODO
