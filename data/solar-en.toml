@@ -294,7 +294,7 @@ cost = [4_000_000, 4_000_000]
 cargo = 50_000
 hull = 500
 fuel = 40
-preinstalled = ["escape", "locality", "weaons", "shields"]
+preinstalled = ["escape", "locality", "weapons", "shields"]
 expansions = ["cloak", "no-fuel"]
 
 ##############
