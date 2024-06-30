@@ -57,18 +57,18 @@ name = "Robotics"
 description = "Automated helpers to assist with many mundane tasks"
 
 [[goods]]
-id = "medicine"
+id = "meds"
 name = "Medicine"
 description = "Medical supplies and drugs needed to run any healthcare system"
 
 [[goods]]
-id = "weapons"
+id = "arms"
 name = "Plasma Rifles"
 description = "Crates of your basic handheld firearm (cannot be used to defend your ship)"
 limit = 20  # having more than this quantity is illegal
 
 [[goods]]
-id = "dilithium"
+id = "warp"
 name = "Dilithium"
 description = "Rare crystals used in the construction of warp drives"
 
