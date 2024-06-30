@@ -297,6 +297,17 @@ fuel = 40
 preinstalled = ["escape", "locality", "weapons", "shields"]
 expansions = ["cloak", "no-fuel"]
 
+[[ships]]
+id = "ship9"
+name = "Void"
+description = "An unusual ship which makes use of experimental dark matter technology"
+cost = [1_000_000_000, 1_000_000_000]
+cargo = 1_000_000
+hull = 10_000
+fuel = 0
+preinstalled = ["locality", "weapons", "shields", "cloak", "no-fuel"]
+expansions = ["escape"]
+
 ##############
 # Expansions #
 ##############
