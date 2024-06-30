@@ -405,7 +405,7 @@ goods = [
 [[planets]]
 id = "moon8-1"
 name = "Triton"
-description = "The largest population center, Patera, has almost 48,000 people"
+description = "The largest population center, Leviathan, has about 48,000 people"
 orbits = "planet8"
 ships = ["ship0"]
     { id = "fuel",   stock =  1000, regen = 15, min = 400,    max = 1000 },
