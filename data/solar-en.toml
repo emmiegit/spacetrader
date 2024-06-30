@@ -142,7 +142,7 @@ goods = [
     { id = "robots", stock =  1000, regen = 10, min = 3100,   max = 8500 },
     { id = "meds",   stock =  3000, regen = 15, min = 800,    max = 1500 },
     { id = "arms",   stock =  1000, regen = 10, min = 1000,   max = 5000 },
-    { id = "warp",   stock =   500, regen =  5, min = 55_000, max = 89_000 },
+    { id = "warp",   stock =   500, regen =  5, min = 60_000, max = 89_000 },
     { id = "drugs",  stock =  3500, regen = 25, min = 20_000, max = 150_000 },
     { id = "gel",    stock =    20, regen =  2, min = 20_000, max = 900_000 },
 ]
@@ -176,7 +176,7 @@ goods = [
     { id = "robots", stock =   900, regen = 10, min = 2800,   max = 8300 },
     { id = "meds",   stock =  2100, regen = 15, min = 850,    max = 1800 },
     { id = "arms",   stock =   800, regen = 10, min = 1200,   max = 5000 },
-    { id = "warp",   stock =   500, regen =  5, min = 55_000, max = 89_000 },
+    { id = "warp",   stock =   500, regen =  5, min = 52_000, max = 89_000 },
     { id = "drugs",  stock =  3700, regen = 25, min = 20_000, max = 150_000 },
     { id = "gel",    stock =    15, regen =  2, min = 2_000,  max = 780_000 },
 ]
@@ -245,7 +245,7 @@ goods = [
     { id = "ore",    stock = 10000, regen = 30, min = 350,    max = 450 },
     { id = "robots", stock =   900, regen =  5, min = 3000,   max = 7400 },
     { id = "meds",   stock =  4000, regen = 20, min = 600,    max = 8000 },
-    { id = "arms",   stock =  4000, regen = 20, min = 3000,   max = 9000 },
+    { id = "arms",   stock =  4000, regen = 20, min = 3400,   max = 9000 },
     { id = "drugs",  stock =  1500, regen =  5, min = 22_000, max = 220_000 },
 ]
 
@@ -261,7 +261,7 @@ ships = ["ship0", "ship1", "ship2", "ship5", "ship6"]
     { id = "ore",    stock =  1200, regen = 10, min = 570,    max = 880 },
     { id = "robots", stock =   300, regen =  5, min = 3100,   max = 8000 },
     { id = "meds",   stock =  4000, regen = 20, min = 900,    max = 8500 },
-    { id = "arms",   stock =  4000, regen = 20, min = 2000,   max = 8000 },
+    { id = "arms",   stock =  4000, regen = 20, min = 2400,   max = 8000 },
     { id = "drugs",  stock =  1500, regen = 15, min = 21_000, max = 105_000 },
     { id = "gel",    stock =    20, regen =  2, min = 2_000,  max = 780_000 },
 ]
@@ -298,7 +298,7 @@ goods = [
     { id = "robots", stock =   700, regen = 10, min = 3100,   max = 6900 },
     { id = "meds",   stock =  1300, regen = 15, min = 900,    max = 1400 },
     { id = "arms",   stock =  1300, regen = 10, min = 1600,   max = 5100 },
-    { id = "warp",   stock =   500, regen =  5, min = 70_000, max = 89_000 },
+    { id = "warp",   stock =   500, regen =  5, min = 71_000, max = 89_000 },
     { id = "drugs",  stock =  3000, regen = 25, min = 21_000, max = 150_000 },
     { id = "gel",    stock =    10, regen =  2, min = 3_000,  max = 550_000 },
 ]
@@ -339,34 +339,100 @@ goods = [
 id = "planet7"
 name = "Uranus"
 description = "The famous Herschel Shipyards are in orbit here"
+ships = ["ship0", "ship1", "ship2", "ship3", "ship4", "ship5", "ship6", "ship7", "ship8"]
+goods = [
+    { id = "fuel",   stock = 20000, regen = 20, min = 240,    max = 820 },
+    { id = "food",   stock = 40000, regen = 20, min = 40,     max = 45 },
+    { id = "water",  stock = 40000, regen = 20, min = 4,      max = 13 },
+    { id = "ore",    stock =  8000, regen = 10, min = 700,    max = 1000 },
+    { id = "robots", stock =   900, regen = 10, min = 3300,   max = 8200 },
+    { id = "meds",   stock =  1500, regen = 10, min = 800,    max = 1000 },
+    { id = "arms",   stock =  1000, regen =  5, min = 1200,   max = 7000 },
+    { id = "warp",   stock =  1000, regen = 10, min = 70_000, max = 75_000 },
+    { id = "drugs",  stock =  3500, regen = 20, min = 25_000, max = 130_000 },
+    { id = "gel",    stock =    20, regen =  2, min = 2_100,  max = 750_000 },
+]
 
 [[planets]]
 id = "moon7-3"
 name = "Titania"
 description = "A notorious penal colony resides here"
 orbits = "planet7"
+ships = []
+goods = [
+    { id = "fuel",   stock =  9000, regen = 40, min = 240,    max = 800 },
+    { id = "food",   stock = 50000, regen = 40, min = 30,     max = 50 },
+    { id = "water",  stock = 50000, regen = 40, min = 4,      max = 6 },
+    { id = "meds",   stock =  2000, regen = 40, min = 900,    max = 1300 },
+    { id = "arms",   stock =  1000, regen = 30, min = 1500,   max = 4000 },
+    { id = "drugs",  stock =  4000, regen = 20, min = 30_000, max = 210_000 },
+]
 
 [[planets]]
 id = "moon7-4"
 name = "Oberon"
 description = "The solar system's only natural source of dilithium"
 orbits = "planet7"
+ships = ["ship4", "ship5"]
+goods = [
+    { id = "fuel",   stock = 12000, regen = 20, min = 300,    max = 900 },
+    { id = "food",   stock = 50000, regen = 10, min = 35,     max = 50 },
+    { id = "water",  stock = 50000, regen = 10, min = 4,      max = 8 },
+    { id = "ore",    stock =  1000, regen = 10, min = 720,    max = 900 },
+    { id = "robots", stock =  1000, regen = 15, min = 3100,   max = 8500 },
+    { id = "meds",   stock =  2000, regen = 10, min = 830,    max = 1800 },
+    { id = "arms",   stock =  1000, regen = 10, min = 1200,   max = 4600 },
+    { id = "warp",   stock =   500, regen =  5, min = 40_000, max = 60_000 },
+    { id = "drugs",  stock =  3500, regen = 25, min = 22_000, max = 200_000 },
+    { id = "gel",    stock =    10, regen =  2, min = 3_000,  max = 650_000 },
+]
 
 [[planets]]
 id = "planet8"
 name = "Neptune"
 description = "All that orbits here is a tiny science station"
+ships = []
+goods = [
+    { id = "fuel",   stock = 10000, regen = 20, min = 300,    max = 800 },
+    { id = "food",   stock = 10000, regen = 30, min = 35,     max = 50 },
+    { id = "water",  stock = 10000, regen = 30, min = 10,      max = 20 },
+    { id = "robots", stock =   900, regen =  8, min = 2800,   max = 8000 },
+    { id = "arms",   stock =  1200, regen = 10, min = 1000,   max = 5000 },
+    { id = "drugs",  stock =  3500, regen = 25, min = 40_000, max = 220_000 },
+    { id = "gel",    stock =    30, regen =  5, min = 4_000,  max = 100_000 },
+]
 
 [[planets]]
 id = "moon8-1"
 name = "Triton"
 description = "The largest population center, Patera, has almost 48,000 people"
 orbits = "planet8"
+ships = ["ship0"]
+    { id = "fuel",   stock =  1000, regen = 15, min = 400,    max = 1000 },
+    { id = "food",   stock =  7000, regen = 20, min = 60,     max = 90 },
+    { id = "water",  stock =  7000, regen = 20, min = 10,     max = 20 },
+    { id = "ore",    stock =  1600, regen =  8, min = 380,    max = 500 },
+    { id = "robots", stock =   500, regen =  5, min = 3900,   max = 9000 },
+    { id = "meds",   stock =  1000, regen =  5, min = 600,    max = 1200 },
+    { id = "arms",   stock =   800, regen =  5, min = 4000,   max = 6000 },
+    { id = "warp",   stock =   500, regen =  1, min = 55_000, max = 89_000 },
+    { id = "drugs",  stock =  3500, regen = 10, min = 20_000, max = 150_000 },
+    { id = "gel",    stock =    10, regen =  2, min = 30_000, max = 500_000 },
+]
 
 [[planets]]
 id = "dwarf1"
 name = "Pluto"
 description = "A small, remote dwarf planet in the Kuiper Belt"
+ships = ["ship9"]
+goods = [
+    { id = "fuel",   stock =  1000, regen = 15, min = 400,    max = 1000 },
+    { id = "food",   stock =  7000, regen = 20, min = 60,     max = 90 },
+    { id = "water",  stock =  7000, regen = 20, min = 10,     max = 20 },
+    { id = "ore",    stock =   100, regen =  8, min = 400,    max = 700 },
+    { id = "drugs",  stock =  1000, regen = 10, min = 80_000, max = 100_000 },
+    { id = "gel",    stock =    25, regen =  2, min = 50_000, max = 780_000 },
+]
 
 #########
 # Ships #
