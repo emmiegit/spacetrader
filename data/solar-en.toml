@@ -13,8 +13,8 @@ base-consumption = {
 ]
 
 [game.money]
-starting-cash = 100_000
-starting-debt = 102_000
+starting-cash = 10_000
+starting-debt = 12_000
 starting-bank = 0
 
 debt-interest = 0.07
