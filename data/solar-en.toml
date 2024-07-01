@@ -518,6 +518,8 @@ description = [
     "{planet} government fails to pass budget, chaos in the legislature!",
     "Are {randcolor} spacesuits now fashionable?",
     "Is {randcolor} the ugliest color? Vote now!",
+    "Politician caught receiving bribes from {randcrop} conglomerate!",
+    "Politician caught in sex scandal!",
     "Famous celebrity does something stupid!",
 ]
 
@@ -532,6 +534,7 @@ description = [
     "Massive {good} convoy destroyed by pirates!",
     "Spaceship crashes into {good} convoy, prices explode!",
     "{randplanet} begins hoarding {good}, cites planetary security concerns",
+    "Massive {good} shortage! Prices spike",
 ]
 duration = [2, 5]
 price = [2.4, 3.8]
@@ -671,6 +674,72 @@ duration = [10, 20]
 price = [0.05, 0.15]
 
 [[events.price]]
+id = "arms-up"
+goods = ["arms"]
+description = [
+    "Arms race! Weapon prices skyrocket!",
+    "Insurrection in outlying colonies! Weapons needed fast!",
+    "Rebellion in capital city! {planet} government needs guns!",
+    "{planet} military places massive order for plasma rifles! Prices increase",
+    "Plasma injector shortage! Rifle manufacturing costs spike!",
+]
+duration = [1, 5]
+price = [3.0, 8.2]
+
+[[events.price]]
+id = "arms-down"
+goods = ["arms"]
+description = [
+    "Peace treaty signed with rebels! Demand for weapons falls",
+    "Military surplus released. Market flooded with cheap arms!",
+    "New plasma arms factory built! Acquisition costs fall",
+]
+duration = [1, 5]
+price = [0.3, 0.6]
+
+[[events.price]]
+id = "war-up"
+goods = ["arms"]
+description = [
+    "Escalation in the fighting between Ganymede and Callisto! Arms sorely needed",
+    "Ganymede destroys rebel base. Callistoan fighters buying up weapons!",
+    "{planet} needs more weapons for its war!",
+    "{planet} calls for arms! Prices are high!",
+]
+duration = [5, 10]
+price = [1.5]
+
+[[events.price]]
+id = "war-down"
+description = [
+    "Callistoan fighters seize arms freighters, selling excess weapons to fund war effort!",
+    "Ganymedian authorities impound Callisto arm shipment, selling excess arms",
+]
+duration = [2, 5]
+price = [0.1, 0.3]
+
+[[events.price]]
+id = "warp-up"
+goods = ["warp"]
+description = [
+    "Dilithium mine explodes! Prices skyrocket",
+    "Dilithium refinery sabotaged by {randplanet} extremists!",
+]
+duration = [1, 2]
+price = [1.2, 5.7]
+
+[[events.price]]
+id = "warp-down"
+goods = ["warp"]
+description = [
+    "Dilithium Refinery Corp announces massive expansion",
+    "Dilithium refineries temporarily selling reduced-price crystal latches",
+    "{planet} government approves subsidy for dilithium powder filtration!",
+]
+duration = [1, 2]
+price = [0.3, 0.7]
+
+[[events.price]]
 id = "drugs-up"
 goods = ["drugs"]
 description = [
@@ -699,7 +768,26 @@ description = [
 duration = [3, 5]
 price = [0.25, 0.90]
 
-# TODO more good-specific events
+[[events.price]]
+id = "gel-up"
+goods = ["gel"]
+description = [
+    "{randplanet} undertaking massive cloning project, orders vats of biomimetic gel!",
+    "Terrorists stealing massive quantities of biomimetic gel, prices spike!",
+    "{planet} government impounds biomimetic gel!",
+]
+duration = [10, 15]
+price = [1.5, 4.5]
+
+[[events.price]
+id = "gel-down"
+goods = ["gel"]
+description = [
+    "{planet} government loosens regulations surrounding biomimetic gel, prices fall!",
+    "Cloning facility on Pluto unexpectedly releases thousands of units of biomimetic gel!",
+]
+duration = [10, 15]
+price = [0.4, 0.8]
 
 [[events.price]]
 id = "prison-break"
@@ -942,6 +1030,7 @@ crops = [
     "mhrugen",
     "moonfruit",
     "goldenfruit",
+    "glow worm",
     "purple wheat",
     "nitrogen guava",
     "Venusian pea",
