@@ -509,9 +509,10 @@ goods = [
 # Events #
 ##########
 
-[[events]]
-id = "flavor"  # has no effect on gameplay
-goods = []
+# TODO salvage events
+# TODO cash events
+
+[[events.flavor]]
 description = [
     "{planet} government announces capture of terrorist leader!",
     "{planet} government fails to pass budget, chaos in the legislature!",
@@ -520,10 +521,7 @@ description = [
     "Famous celebrity does something stupid!",
 ]
 
-# TODO salvage events
-# TODO cash events
-
-[[events]]
+[[events.price]]
 id = "goods-up"
 goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
 description = [
@@ -532,24 +530,20 @@ description = [
     "{goodname} suddenly hard to find - market manipulation blamed!",
     "Massive merger between {good} corporations, monopoly fears boost prices!",
 ]
-effect = {
-    duration = [2, 5],
-    price = [2.4, 3.8],
-}
+duration = [2, 5]
+price = [2.4, 3.8]
 
-[[events]]
+[[events.price]]
 id = "goods-down"
 goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
 description = [
     "{planet} government announces release of {good} stockpiles",
     "{planet} government announces temporary price controls for {good}",
 ]
-effect = {
-    duration = [2, 5],
-    price = [0.30, 0.60],
-}
+duration = [2, 5]
+price = [0.30, 0.60]
 
-[[events]]
+[[events.price]]
 id = "goods-flux"
 goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
 description = [
@@ -558,12 +552,10 @@ description = [
     "{planet} government backs out of {good} regulation plan, market chaos!",
     "Solar system network outages cause market chaos!",
 ]
-effect = {
-    duration = [1, 10],
-    price = [0.60, 2.2],
-}
+duration = [1, 10]
+price = [0.60, 2.2]
 
-[[events]]
+[[events.price]]
 id = "water-up-1"
 goods = ["water"]
 description = [
@@ -572,12 +564,10 @@ description = [
     "Freak accident evaporates water supplies!",
     "Factory explodes and contaminates water supply!",
 ]
-effect = {
-    duration = [2, 5],
-    price = [2.0, 6.0],
-}
+duration = [2, 5]
+price = [2.0, 6.0]
 
-[[events]]
+[[events.price]]
 id = "water-up-2"
 goods = ["water"]
 description = [
@@ -586,12 +576,10 @@ description = [
     "Corporation admits to poisoning water supply. Prices skyrocket!",
     "Ion storm destroys water purification cells!",
 ]
-effect = {
-    duration = [3, 8],
-    price = [2.5, 12.0],
-}
+duration = [3, 8]
+price = [2.5, 12.0]
 
-[[events]]
+[[events.price]]
 id = "water-up-3"
 goods = ["water"]
 description = [
@@ -600,36 +588,30 @@ description = [
     "Spaceship crashes into water tanker, supply dries up!",
     "Terrorists destroy water pipeline!",
 ]
-effect = {
-    duration = [6, 10],
-    price = [8.0, 15.0],
-}
+duration = [6, 10]
+price = [8.0, 15.0]
 
-[[events]]
+[[events.price]]
 id = "water-down-1"
 goods = ["water"]
 description = [
     "Underground water basin found",
     "New source of water discovered under {planet}'s crust",
 ]
-effect = {
-    duration = [10, 20],
-    price = [0.15, 0.50],
-}
+duration = [10, 20]
+price = [0.15, 0.50]
 
-[[events]]
+[[events.price]]
 id = "water-down-2"
 goods = ["water"]
 description = [
     "New water refinery installed!",
     "New water purification technology rollout complete",
 ]
-effect = {
-    duration = [10, 20],
-    price = [0.05, 0.15],
-}
+duration = [10, 20]
+price = [0.05, 0.15]
 
-[[events]]
+[[events.price]]
 id = "drugs-up"
 goods = ["drugs"]
 description = [
@@ -642,12 +624,10 @@ description = [
     "New narcotic hits the market, everyone goes wild!",
     "Drug cartel hoards product in attempt to win price war with rival",
 ]
-effect = {
-    duration = [3, 5],
-    price = [3.0, 20.0],
-}
+duration = [3, 5]
+price = [3.0, 20.0]
 
-[[events]]
+[[events.price]]
 id = "drugs-down"
 goods = ["drugs"]
 description = [
@@ -656,24 +636,20 @@ description = [
     "Medical facility on {randplanet} robbed, cheap drugs flood the streets!",
     "Drug cartel dumps product in attempt to win price war with rival",
 ]
-effect = {
-    duration = [3, 5],
-    price = [0.25, 0.90],
-}
+duration = [3, 5]
+price = [0.25, 0.90]
 
 # TODO more good-specific events
 
-[[events]]
+[[events.price]]
 id = "prison-break"
 goods = ["food", "water", "robots", "meds", "arms", "warp"]
 description = [
     "Massive prison break! Fears of criminals results in {good} price surge!",
     "Thousands escape from prison, everyone starts hoarding {good}!",
 ]
-effect = {
-    duration = [2, 4],
-    price = [6.0, 8.1],
-}
+duration = [2, 4]
+price = [6.0, 8.1]
 
 ##############
 # Encounters #
