@@ -110,6 +110,7 @@ description = "Dummy planet for storing base values"
 symbol = "O"  # very short, ideally just a single character. prefer ASCII
 color = ""  # must be an ANSI terminal color, i.e. one of [black, blue, cyan, green, magenta, red, yellow, white]
 events = []
+# TODO add features
 ships = ["ship0", "ship1", "ship2"]
 goods = [
     # good ID        base stock and change %   price range
@@ -131,7 +132,26 @@ name = "Venus"
 description = "Space Station Magellan in orbit above Venus"
 symbol = "O"
 color = "yellow"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-2",
+    "water-up-1",
+    "water-up-2",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 ships = ["ship0", "ship1", "ship2", "ship5"]
 goods = [
     { id = "fuel",   stock = 20000, regen = 70, min = 100,    max = 600 },
@@ -152,7 +172,28 @@ name = "Earth"
 description = "Galaxy Spaceport, near United Earth Headquarters"
 symbol = "O"
 color = "blue"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1",
+    "water-up-1",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 ships = ["ship0", "ship1", "ship2", "ship7", "ship8"]
 goods = [
     { id = "fuel",   stock = 18000, regen = 30, min = 250,    max = 800 },
@@ -173,7 +214,22 @@ name = "Luna"
 description = "Lunar Base Sigma, on Earth's moon"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1",
+    "water-up-1",
+    "water-up-2",
+    "water-down-2",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet3"
 ships = []
 goods = [
@@ -192,7 +248,28 @@ name = "Mars"
 description = "Olympus City, a Martian metropolis of 17 million"
 symbol = "o"
 color = "red"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1",
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 200,    max = 800 },
@@ -213,7 +290,23 @@ name = "Jupiter"
 description = "Space Station Horizon has a very beautiful arboretum"
 symbol = "O"
 color = "magenta"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-2",
+    "water-up-2",
+    "water-up-3",
+    "water-down-1",
+    "water-down-2",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+]
 ships = ["ship0", "ship1"]
 goods = [
     # good ID        base stock and change %   price range
@@ -232,7 +325,24 @@ name = "Io"
 description = "Sulfur City is well-known as a party destination"
 symbol = "o"
 color = "yellow"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1",
+    "water-up-1",
+    "water-up-2",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet5"
 ships = ["ship0", "ship1", "ship2", "ship3"]
 goods = [
@@ -252,7 +362,27 @@ name = "Europa"
 description = "The seafood from Europan oceans is known to be delectable"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet5"
 ships = ["ship0", "ship1", "ship2"]
 goods = [
@@ -273,7 +403,27 @@ name = "Ganymede"
 description = "Home to an aggressive mining conglomerates, has been at war with Callisto for years"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "war-up",
+    "war-down",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet5"
 ships = ["ship5", "ship6", "ship7"]
 goods = [
@@ -293,7 +443,29 @@ name = "Callisto"
 description = "Poor colony that sees itself as resisting Ganymedian corporate fascism"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "war-up",
+    "war-down",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 orbits = "planet5"
 ships = ["ship0", "ship1", "ship2", "ship5", "ship6"]
     { id = "fuel",   stock = 10000, regen = 20, min = 200,    max = 800 },
@@ -313,7 +485,27 @@ name = "Saturn"
 description = "Space Station Cassini nestled above Saturn's iconic rings"
 symbol = "(O)"
 color = "yellow"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-2",
+    "water-up-2",
+    "water-up-3",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 250,    max = 600 },
@@ -334,7 +526,29 @@ name = "Titan"
 description = "At 52 million people, this is the most populated place past Mars"
 symbol = "o"
 color = "yellow"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 orbits = "planet6"
 ships = ["ship3", "ship4", "ship5"]
 goods = [
@@ -356,7 +570,25 @@ name = "Rhea"
 description = "The preferred retirement destination for the well-off"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet6"
 ships = ["ship3", "ship4"]
 goods = [
@@ -375,7 +607,25 @@ name = "Mimas"
 description = "A dull moon only known for its weapon factories"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet6"
 ships = []
 goods = [
@@ -394,7 +644,27 @@ name = "Uranus"
 description = "The famous Herschel Shipyards are in orbit here"
 symbol = "O"
 color = "blue"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-2",
+    "water-up-2",
+    "water-up-3",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 ships = ["ship0", "ship1", "ship2", "ship3", "ship4", "ship5", "ship6", "ship7", "ship8"]
 goods = [
     { id = "fuel",   stock = 20000, regen = 20, min = 240,    max = 820 },
@@ -415,7 +685,26 @@ name = "Titania"
 description = "A notorious penal colony resides here"
 symbol = "o"
 color = "white"
-events = ["flavor", "prison-break", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "prison-break",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+]
 orbits = "planet7"
 ships = []
 goods = [
@@ -433,7 +722,29 @@ name = "Oberon"
 description = "The solar system's only natural source of dilithium"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-1", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 orbits = "planet7"
 ships = ["ship4", "ship5"]
 goods = [
@@ -455,7 +766,25 @@ name = "Neptune"
 description = "All that orbits here is a tiny science station"
 symbol = "O"
 color = "blue"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-2",
+    "water-up-2",
+    "water-up-3",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 ships = []
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 300,    max = 800 },
@@ -473,7 +802,29 @@ name = "Triton"
 description = "The largest population center, Leviathan, has about 48,000 people"
 symbol = "o"
 color = "white"
-events = ["flavor", "goods-up", "goods-down", "goods-flux", "water-up-2", "water-up-3", "water-down-1", "water-down-2"]
+events = [
+    "flavor",
+    "goods-up",
+    "goods-down",
+    "goods-flux",
+    "fuel-up",
+    "fuel-down",
+    "food-up-1",
+    "food-up-2",
+    "food-down-1"
+    "water-up-1",
+    "water-up-2",
+    "water-down-1",
+    "water-down-2",
+    "arms-up",
+    "arms-down",
+    "warp-up",
+    "warp-down",
+    "drugs-up",
+    "drugs-down",
+    "gel-up",
+    "gel-down",
+]
 orbits = "planet8"
 ships = ["ship0"]
     { id = "fuel",   stock =  1000, regen = 15, min = 400,    max = 1000 },
@@ -563,7 +914,7 @@ duration = [1, 10]
 price = [0.60, 2.2]
 
 [[events.price]]
-id = "fuel-up-1"
+id = "fuel-up"
 goods = ["fuel"]
 description = [
     "Fuel processing plant explodes! Prices rice",
@@ -574,7 +925,7 @@ duration = [1, 3]
 price = [1.8, 3.5]
 
 [[events.price]]
-id = "fuel-down-1"
+id = "fuel-down"
 goods = ["fuel"]
 description = [
     "New Venusian hypergas pocket discovered, fuel prices scrap!",
@@ -698,27 +1049,6 @@ duration = [1, 5]
 price = [0.3, 0.6]
 
 [[events.price]]
-id = "war-up"
-goods = ["arms"]
-description = [
-    "Escalation in the fighting between Ganymede and Callisto! Arms sorely needed",
-    "Ganymede destroys rebel base. Callistoan fighters buying up weapons!",
-    "{planet} needs more weapons for its war!",
-    "{planet} calls for arms! Prices are high!",
-]
-duration = [5, 10]
-price = [1.5]
-
-[[events.price]]
-id = "war-down"
-description = [
-    "Callistoan fighters seize arms freighters, selling excess weapons to fund war effort!",
-    "Ganymedian authorities impound Callisto arm shipment, selling excess arms",
-]
-duration = [2, 5]
-price = [0.1, 0.3]
-
-[[events.price]]
 id = "warp-up"
 goods = ["warp"]
 description = [
@@ -779,7 +1109,7 @@ description = [
 duration = [10, 15]
 price = [1.5, 4.5]
 
-[[events.price]
+[[events.price]]
 id = "gel-down"
 goods = ["gel"]
 description = [
@@ -788,6 +1118,8 @@ description = [
 ]
 duration = [10, 15]
 price = [0.4, 0.8]
+
+# Special events
 
 [[events.price]]
 id = "prison-break"
@@ -798,6 +1130,28 @@ description = [
 ]
 duration = [2, 4]
 price = [6.0, 8.1]
+
+[[events.price]]
+id = "war-up"
+goods = ["arms"]
+description = [
+    "Escalation in the fighting between Ganymede and Callisto! Arms sorely needed",
+    "Ganymede destroys rebel base. Callistoan fighters buying up weapons!",
+    "{planet} needs more weapons for its war!",
+    "{planet} calls for arms! Prices are high!",
+]
+duration = [5, 10]
+price = [1.5]
+
+[[events.price]]
+id = "war-down"
+description = [
+    "Callistoan fighters seize arms freighters, selling excess weapons to fund war effort!",
+    "Ganymedian authorities impound Callisto arm shipment, selling excess arms",
+    "Possible peace treaty between Callisto and Ganymede?",
+]
+duration = [2, 5]
+price = [0.1, 0.3]
 
 ##############
 # Encounters #
