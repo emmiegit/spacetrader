@@ -110,7 +110,7 @@ description = "Dummy planet for storing base values"
 symbol = "O"  # very short, ideally just a single character. prefer ASCII
 color = ""  # must be an ANSI terminal color, i.e. one of [black, blue, cyan, green, magenta, red, yellow, white]
 events = []
-# TODO add features
+features = ["bank"]
 ships = ["ship0", "ship1", "ship2"]
 goods = [
     # good ID        base stock and change %   price range
@@ -152,6 +152,7 @@ events = [
     "gel-up",
     "gel-down",
 ]
+features = ["bank", "ship-expansions"]
 ships = ["ship0", "ship1", "ship2", "ship5"]
 goods = [
     { id = "fuel",   stock = 20000, regen = 70, min = 100,    max = 600 },
@@ -194,6 +195,7 @@ events = [
     "gel-up",
     "gel-down",
 ]
+features = ["bank", "ship-expansions"]
 ships = ["ship0", "ship1", "ship2", "ship7", "ship8"]
 goods = [
     { id = "fuel",   stock = 18000, regen = 30, min = 250,    max = 800 },
@@ -231,6 +233,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet3"
+features = []
 ships = []
 goods = [
     { id = "fuel",   stock = 9000, regen = 20, min = 300,    max = 900 },
@@ -270,6 +273,7 @@ events = [
     "gel-up",
     "gel-down",
 ]
+features = ["bank", "ship-expansions"]
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 200,    max = 800 },
@@ -307,6 +311,7 @@ events = [
     "drugs-up",
     "drugs-down",
 ]
+features = ["bank"]
 ships = ["ship0", "ship1"]
 goods = [
     # good ID        base stock and change %   price range
@@ -344,6 +349,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet5"
+features = []
 ships = ["ship0", "ship1", "ship2", "ship3"]
 goods = [
     { id = "fuel",   stock = 11000, regen = 20, min = 250,    max = 820 },
@@ -384,6 +390,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet5"
+features = []
 ships = ["ship0", "ship1", "ship2"]
 goods = [
     { id = "fuel",   stock =  9000, regen = 20, min = 210,    max = 900 },
@@ -425,6 +432,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet5"
+features = []
 ships = ["ship5", "ship6", "ship7"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 300,    max = 800 },
@@ -467,7 +475,9 @@ events = [
     "gel-down",
 ]
 orbits = "planet5"
+features = []
 ships = ["ship0", "ship1", "ship2", "ship5", "ship6"]
+goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 200,    max = 800 },
     { id = "food",   stock = 70000, regen = 30, min = 30,     max = 50 },
     { id = "water",  stock = 70000, regen = 30, min = 2,      max = 9 },
@@ -506,6 +516,7 @@ events = [
     "gel-up",
     "gel-down",
 ]
+features = ["bank"]
 ships = ["ship2", "ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 250,    max = 600 },
@@ -550,6 +561,7 @@ events = [
     "gel-down",
 ]
 orbits = "planet6"
+features = []
 ships = ["ship3", "ship4", "ship5"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 30, min = 280,    max = 700 },
@@ -590,6 +602,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet6"
+features = []
 ships = ["ship3", "ship4"]
 goods = [
     { id = "fuel",   stock = 10000, regen = 30, min = 300,    max = 730 },
@@ -627,6 +640,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet6"
+features = []
 ships = []
 goods = [
     { id = "fuel",   stock =  8000, regen = 20, min = 250,    max = 900 },
@@ -665,6 +679,7 @@ events = [
     "gel-up",
     "gel-down",
 ]
+features = ["bank", "ship-expansions"]
 ships = ["ship0", "ship1", "ship2", "ship3", "ship4", "ship5", "ship6", "ship7", "ship8"]
 goods = [
     { id = "fuel",   stock = 20000, regen = 20, min = 240,    max = 820 },
@@ -706,6 +721,7 @@ events = [
     "drugs-down",
 ]
 orbits = "planet7"
+features = []
 ships = []
 goods = [
     { id = "fuel",   stock =  9000, regen = 40, min = 240,    max = 800 },
@@ -746,6 +762,7 @@ events = [
     "gel-down",
 ]
 orbits = "planet7"
+features = []
 ships = ["ship4", "ship5"]
 goods = [
     { id = "fuel",   stock = 12000, regen = 20, min = 300,    max = 900 },
@@ -785,6 +802,7 @@ events = [
     "gel-up",
     "gel-down",
 ]
+features = ["bank"]
 ships = []
 goods = [
     { id = "fuel",   stock = 10000, regen = 20, min = 300,    max = 800 },
@@ -827,6 +845,8 @@ events = [
 ]
 orbits = "planet8"
 ships = ["ship0"]
+features = []
+goods = [
     { id = "fuel",   stock =  1000, regen = 15, min = 400,    max = 1000 },
     { id = "food",   stock =  7000, regen = 20, min = 60,     max = 90 },
     { id = "water",  stock =  7000, regen = 20, min = 10,     max = 20 },
@@ -847,6 +867,7 @@ symbol = "o"
 color = "white"
 events = []  # nothing ever happens on Pluto
 ships = ["ship9"]
+features = ["bank"]
 goods = [
     { id = "fuel",   stock =  1000, regen = 15, min = 400,    max = 1000 },
     { id = "food",   stock =  7000, regen = 20, min = 60,     max = 90 },
