@@ -1,0 +1,22 @@
+[package]
+name = "mspacetrader"
+description = "Midnight Space Trader, TUI game based after SolarWars"
+repository = "https://github.com/emmiegit/spacetrader"
+categories = ["games"]
+authors = ["Emmie Smith <emmie.maeda@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+clap = "4"
+once_cell = "1"
+pancurses = "0.17"
+serde = { version = "1", features = ["derive"] }
+strfmt = "0.2"
+toml = { version = "0.8", features = ["parse"], default-features = false }
+
+[build-dependencies]
+built = { version = "0.7", features = ["git2"] }
