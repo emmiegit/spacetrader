@@ -523,12 +523,15 @@ description = [
 
 [[events.price]]
 id = "goods-up"
-goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
+goods = ["fuel", "food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
 description = [
     "{planet} is facing a massive {good} shortage!",
     "{planet} government announces critical {good} shortage",
     "{goodname} suddenly hard to find - market manipulation blamed!",
     "Massive merger between {good} corporations, monopoly fears boost prices!",
+    "Massive {good} convoy destroyed by pirates!",
+    "Spaceship crashes into {good} convoy, prices explode!",
+    "{randplanet} begins hoarding {good}, cites planetary security concerns",
 ]
 duration = [2, 5]
 price = [2.4, 3.8]
@@ -539,6 +542,7 @@ goods = ["food", "water", "ore", "robots", "meds", "arms", "warp", "gel"]
 description = [
     "{planet} government announces release of {good} stockpiles",
     "{planet} government announces temporary price controls for {good}",
+    "Massive overproduction of {good} announced!",
 ]
 duration = [2, 5]
 price = [0.30, 0.60]
@@ -554,6 +558,61 @@ description = [
 ]
 duration = [1, 10]
 price = [0.60, 2.2]
+
+[[events.price]]
+id = "fuel-up-1"
+goods = ["fuel"]
+description = [
+    "Fuel processing plant explodes! Prices rice",
+    "Massive fuel plant breakdown, shut down for safety reasons. Fuel prices skyrocket!",
+    "Impurities found in fuel, everyone scrambles to buy verified safe supply!",
+]
+duration = [1, 3]
+price = [1.8, 3.5]
+
+[[events.price]]
+id = "fuel-down-1"
+goods = ["fuel"]
+description = [
+    "New Venusian hypergas pocket discovered, fuel prices scrap!",
+    "Venusian government announces cheaper fuel exports for official {planet} use!",
+]
+duration = [1, 3]
+price = [0.3, 0.7]
+
+[[events.price]]
+id = "food-up-1"
+goods = ["food"]
+description = [
+    "{planet} faces massive crop failure!",
+    "Low yields in {randcrop} crops cause food shortage!",
+    "Pests destroy {randcrop} harvest!",
+]
+duration = [2, 5]
+price = [2.5, 8.0]
+
+[[events.price]]
+id = "food-up-2"
+goods = ["food"]
+description = [
+    "System facing famine! Food prices explode!",
+    "Void rats eat through critical {randcrop} storehouse!",
+    "{randplanet} refusing {randcrop} shipments! Citizens are not getting enough calories",
+    "System is on the verge of starvation! Food desperately needed",
+]
+duration = [3, 7]
+price = [3.5, 10.2]
+
+[[events.price]]
+id = "food-down-1"
+goods = ["food"]
+description = [
+    "Massive {randcrop} harvest! Food prices fall",
+    "New fertilizer technology developed! Food production rises",
+    "New strain of {randcrop} developed! It's even hardier and more disease-resistant",
+]
+duration = [1, 3]
+price = [0.30, 0.50]
 
 [[events.price]]
 id = "water-up-1"
@@ -635,6 +694,7 @@ description = [
     "Illicit drug production hits an all-time high",
     "Medical facility on {randplanet} robbed, cheap drugs flood the streets!",
     "Drug cartel dumps product in attempt to win price war with rival",
+    "Drug activity significantly increasing, prices fall!",
 ]
 duration = [3, 5]
 price = [0.25, 0.90]
@@ -878,6 +938,7 @@ crops = [
     "cosmic sponge",
     "void mango",
     "spark lettuce",
+    "ripple bean",
     "mhrugen",
     "moonfruit",
     "goldenfruit",
