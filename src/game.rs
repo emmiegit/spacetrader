@@ -17,4 +17,17 @@
  * included in all copies or substantial portions of the Software.
  */
 
-// TODO
+use crate::data::GameData;
+use crate::types::*;
+
+#[derive(Debug)]
+pub struct Game {
+    // Constant data
+    pub data: GameData,
+}
+
+impl Game {
+    pub fn new(data: GameData) -> Self {
+        Game
+    }
+}

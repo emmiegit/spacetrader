@@ -25,6 +25,7 @@ mod macros;
 
 mod args;
 mod data;
+mod dynamic_enum;
 mod info;
 mod types;
 

@@ -18,6 +18,7 @@
  */
 
 use super::DataFile;
+use crate::types::*;
 use anyhow::Result;
 use std::path::PathBuf;
 
