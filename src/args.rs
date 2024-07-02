@@ -42,7 +42,7 @@ pub fn parse_args() -> GameData {
         .remove_one::<PathBuf>("data-file")
         .expect("Required argument not provided");
 
-    match GameData::load(&data_path) {
+    match GameData::load(data_path) {
         Ok(config) => config,
         Err(error) => {
             eprintln!("Unable to load configuration from file: {error}");

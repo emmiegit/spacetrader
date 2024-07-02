@@ -1,5 +1,5 @@
 /*
- * data.rs
+ * data/object.rs
  *
  * mspacetrader - Midnight Space Trader
  * Copyright (C) 2024 Emmie Smith
@@ -17,15 +17,25 @@
  * included in all copies or substantial portions of the Software.
  */
 
+use super::DataFile;
 use anyhow::Result;
-use std::path::Path;
+use std::path::PathBuf;
 
-#[derive(Serialize, Deserialize, Debug)]
-pub struct GameData;
-// TODO
+#[derive(Debug)]
+pub struct GameData {
+    pub raw_toml: String,
+    pub raw_toml_path: PathBuf,
+    // TODO
+}
 
 impl GameData {
-    pub fn load(path: &Path) -> Result<Self> {
-        todo!()
+    pub fn load(raw_toml_path: PathBuf) -> Result<Self> {
+        let (object, raw_toml) = DataFile::load(&raw_toml_path)?;
+        todo!();
+
+        Ok(GameData {
+            raw_toml,
+            raw_toml_path,
+        })
     }
 }

@@ -1,5 +1,5 @@
 /*
- * main.rs
+ * data/mod.rs
  *
  * mspacetrader - Midnight Space Trader
  * Copyright (C) 2024 Emmie Smith
@@ -17,20 +17,8 @@
  * included in all copies or substantial portions of the Software.
  */
 
-#[macro_use]
-extern crate serde;
+mod file;
+mod object;
 
-#[macro_use]
-mod macros;
-
-mod args;
-mod data;
-mod info;
-mod types;
-
-use self::args::parse_args;
-
-fn main() {
-    let data = parse_args();
-    todo!();
-}
+pub use self::file::DataFile;
+pub use self::object::GameData;

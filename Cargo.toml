@@ -12,6 +12,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1"
 clap = "4"
+currency_rs = "1"
 once_cell = "1"
 pancurses = "0.17"
 serde = { version = "1", features = ["derive"] }
