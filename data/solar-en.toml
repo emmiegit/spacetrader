@@ -1162,7 +1162,7 @@ description = [
     "{planet} calls for arms! Prices are high!",
 ]
 duration = [5, 10]
-price = [1.5]
+price = [1.5, 3.0]
 
 [[events.price]]
 id = "war-down"
